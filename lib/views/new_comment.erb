@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Commente un gossip</title>
+  </head>
+  <body>
+    <h1>Commente un gossip</h1>
+    <p>Balance ton commentaire via le formulaire ci-dessous</p>
+    <form action='/gossips/<%= id %>/new_comment/' method='POST'>
+      Saisis ici ton nom :  <input placeholder = "Ton nom" type='text' name='comment_author'/><br/>
+      Balance ton commentaire : <textarea rows="5" cols="33" placeholder = "Ton contenu" type='text' name='comment_content'></textarea><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>

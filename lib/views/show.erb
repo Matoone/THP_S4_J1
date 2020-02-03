@@ -8,7 +8,21 @@
     <p>Son auteur: <%= gossip.author %></p>
     <p>Le contenu du potin: <%= gossip.content %></p>
     <br />
+    <p><%= comments.length %> commentaires: </p>
+    
+    <% comments.each_with_index do |comment, index| %>
+     <div class="comment">
+        <h4 class="comment-title">
+          <%= comment.author %><br/>
+        </h4>
+        <p class="comment-article">
+          <%= comment.content %>
+          <br/>
+        </p>
+      </div>
+      <% end %>     
     <a href="/gossips/<%= id %>/edit/">Editer ce potin</a>
+    <a href="/gossips/<%= id %>/comment/">Commenter ce potin</a>
     <a href="/">Revenir à l'accueil</a>
   </body>
 </html>
