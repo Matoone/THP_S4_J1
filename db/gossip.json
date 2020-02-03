@@ -1,0 +1,22 @@
+[
+  {
+    "author": "Matt",
+    "content": "Walter il est parti. Même qu'il est plus là.",
+    "id": 1
+  },
+  {
+    "author": "Matt",
+    "content": "Jeremy il est content parce que THP il trouve que c'est trop facile. Surtout aujourd'hui.",
+    "id": 2
+  },
+  {
+    "author": "Jeremy",
+    "content": "Matt il dit que des conneries. Même qu'il est méchant. Et il a une grosse roue qui me fait peur.",
+    "id": 3
+  },
+  {
+    "author": "Jeremy",
+    "content": "Super chouette de galérer sans Walter. Avant on galérait aussi. Mais bon, y avait Walter.",
+    "id": 4
+  }
+]

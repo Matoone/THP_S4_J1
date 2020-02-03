@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Crée un potin !</h1>
+    <p>Balance ton potin via le formulaire ci-dessous</p>
+    <form action='/gossips/new/' method='POST'>
+      Saisis ici ton nom :  <input placeholder = "Ton nom" type='text' name='gossip_author'/><br/>
+      Balance ton potin : <textarea rows="5" cols="33" placeholder = "Ton contenu" type='text' name='gossip_content'></textarea><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>

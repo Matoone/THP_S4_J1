@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+    <style>
+      h1{
+        text-align: center;
+      }
+      .gossip-article {
+      background-color: lightgrey;
+      padding: 5px;
+      margin: 5px;
+      font-size: 15px;
+    }
+      .gossip-title {
+        margin: 0px;
+        padding: 4px;
+        text-align: center;
+        font-size: 25px;
+        
+      }
+      .gossip {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Salut utilisateur! Tu peux créer des potins avec <a href="/gossips/new/">ce lien</a></h1>
+    
+  
+    <% gossips.each_with_index do |gossip, index| %>
+    <div class="gossip">
+        <h4 class="gossip-title">
+          <%= gossip.author %><br/>
+        </h4>
+        <p class="gossip-article">
+          <%= gossip.content %>
+          <br/>
+          <a href="/gossips/<%= index + 1 %>" >Lien vers la page du gossip
+        </a>
+        </p>
+  </div>      
+      <% end %>
+  
+  </body>
+</html>

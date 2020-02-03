@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+gem "sinatra"
+gem "bundler"
+gem "shotgun"
+gem "pry"
