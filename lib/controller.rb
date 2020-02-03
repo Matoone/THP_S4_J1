@@ -1,3 +1,5 @@
+# Les méthodes get pour accéder, post pour modifier.
+
 class ApplicationController < Sinatra::Base
   get "/gossips/new/" do
     erb :new_gossip
@@ -24,9 +26,11 @@ class ApplicationController < Sinatra::Base
     Gossip.update(params["id"], params["gossip_author"], params["gossip_content"])
     redirect "/"
   end
+
   get "/gossips/:id/comment/" do
     erb :new_comment, locals: { gossip: Gossip.find(params["id"]), id: params["id"] }
   end
+
   post "/gossips/:id/new_comment/" do
     Comment.new(params["comment_author"], params["comment_content"], params["id"]).save
     redirect "/"

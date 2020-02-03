@@ -1,5 +1,6 @@
 require "gossip"
 
+# création d'une classe qui hérite de comment par feignantise. Super appelle le constructeur parent.
 class Comment < Gossip
   attr_reader :author, :content, :gossip_id
 
@@ -8,6 +9,7 @@ class Comment < Gossip
     @gossip_id = gossip_id
   end
 
+  #Save overwrite la méthode du parent.
   def save
     json = File.read("./db/comment.json")
     array = JSON.parse(json)
@@ -18,6 +20,7 @@ class Comment < Gossip
     end
   end
 
+  # Renvoie una array contenant les instances de comment qui ont l'id de gossip_id.
   def self.all_by_gossip_id(gossip_id)
     json = File.read("./db/comment.json")
     array = JSON.parse(json)
