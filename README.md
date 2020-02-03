@@ -24,6 +24,8 @@ Récupérer de l'information à partir de formulaires et la stocker en base de d
 
 3/ $ shotgun -p 4567 in ROOT directory
 
+4/ open http://localhost:4567/ in browser.
+
 ## Authors
 
 * **Matthieu Degré** - *Initial work* - [Matoone](https://github.com/Matoone)

@@ -1,12 +1,21 @@
 <html>
   <head>
     <title>Consulter un potin</title>
+    <style>
+      .label{
+        text-decoration: underline;
+        font-size: 25px;
+      }
+      
+    </style>
   </head>
   <body>
   
     <h1>Voici la page du potin n° <%= id %></h1>
-    <p>Son auteur: <%= gossip.author %></p>
-    <p>Le contenu du potin: <%= gossip.content %></p>
+    <h4 class="label">Son auteur: </h4>
+    <p> <%= gossip.author %> </p>
+    <h4 class="label">Le contenu du potin: </h4>
+    <p><%= gossip.content %></p>
     <br />
     <p><%= comments.length %> commentaires: </p>
     
