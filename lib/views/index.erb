@@ -33,7 +33,8 @@
     <% gossips.each_with_index do |gossip, index| %>
     <div class="gossip">
         <h4 class="gossip-title">
-          <%= gossip.author %><br/>
+         <%= index + 1 %>
+          <%= gossip.author %> <br/>
         </h4>
         <p class="gossip-article">
           <%= gossip.content %>
